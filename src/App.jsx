@@ -11,24 +11,24 @@ import SignUpIndex from "./pages/signup/SignUpIndex";
 import ErrorIndex from "./pages/error/ErrorIndex";
 import RootLayouts from "./components/layouts/RootLayouts";
 
-const routes = createRoutesFromElements(
-  <>
-    <Route element={<RootLayouts />}>
-      <Route index element={<HomeIndex />} />
-      <Route path="/about" element={<AboutIndex />} />
-      <Route path="/account" element={<AccountIndex />} />
-      <Route path="/cart" element={<CartIndex />} />
-      <Route path="/checkout" element={<CheckoutIndex />} />
-      <Route path="/contacts" element={<ContactsIndex />} />
-      <Route path="/login" element={<LoginIndex />} />
-      <Route path="/shop" element={<ShopIndex />} />
-      <Route path="/signup" element={<SignUpIndex />} />
-    </Route>
-    <Route path="*" element={<ErrorIndex />} />
-  </>
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route element={<RootLayouts />}>
+        <Route index element={<HomeIndex />} />
+        <Route path="/about" element={<AboutIndex />} />
+        <Route path="/account" element={<AccountIndex />} />
+        <Route path="/cart" element={<CartIndex />} />
+        <Route path="/checkout" element={<CheckoutIndex />} />
+        <Route path="/contacts" element={<ContactsIndex />} />
+        <Route path="/login" element={<LoginIndex />} />
+        <Route path="/shop" element={<ShopIndex />} />
+        <Route path="/signup" element={<SignUpIndex />} />
+      </Route>
+      <Route path="*" element={<ErrorIndex />} />
+    </>
+  )
 );
-
-const router = createBrowserRouter(routes);
 
 function App() {
   return (
