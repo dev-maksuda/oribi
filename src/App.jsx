@@ -1,3 +1,4 @@
+import {createBrowserRouter, createRoutesFromElements, route} from "react-router";
 const routes = createRoutesFromElements(
   <>
     <Route index loader={step1Loader} Component={StepOne} />
@@ -10,9 +11,7 @@ const router = createBrowserRouter(routes);
 
 function App() {
   return (
-    <>
-      
-    </>
+  <RouterProvider router={router} />
   )
 }
 
