@@ -2,6 +2,9 @@ import React from 'react'
 import Container from '../common/Container'
 import logo from '../../assets/image/logo.png'
 import Image from '../ui/image'
+import { Link } from 'react-router-dom'
+import { menuData } from '../../dummyData/MenuData'
+
 
 
 const Navbar = () => {
@@ -9,7 +12,10 @@ const Navbar = () => {
     <header>
         <Container>
             <div>
-                <Image src={logo}/>
+                <Link to="/">
+                    <Image src={logo}/>
+                </Link>
+                
 
                 <ul>
                     {menuData.map((item,index)=>(
