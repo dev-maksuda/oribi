@@ -10,6 +10,17 @@ const Navbar = () => {
         <Container>
             <div>
                 <Image src={logo}/>
+
+                <ul>
+                    {menuData.map((item,index)=>(
+                        <li key={index}>
+                        <Link to={item.url}>
+                            {item.label}
+                        </Link>
+                        </li>
+                    ))}
+                </ul>
+
             </div>
         </Container>
     </header>
