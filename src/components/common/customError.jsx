@@ -1,9 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const customError = () => {
+const CustomError = () => {
   return (
-    <div>customError</div>
+    <div className='min-h-screen '>
+        <Link to={'/'}>Back to Home</Link>
+    </div>
   )
 }
 
-export default customError
+export default CustomError
