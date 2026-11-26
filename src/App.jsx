@@ -8,7 +8,6 @@ import ContactsIndex from "./pages/contacts/ContactsIndex";
 import LoginIndex from "./pages/login/LoginIndex";
 import ShopIndex from "./pages/shop/ShopIndex";
 import SignUpIndex from "./pages/signup/SignUpIndex";
-import ErrorIndex from "./pages/error/ErrorIndex";
 import RootLayouts from "./components/layouts/RootLayouts";
 import CustomError from "./components/common/CustomError";
 
