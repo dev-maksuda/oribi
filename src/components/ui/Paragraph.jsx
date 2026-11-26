@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Peragraph = ({className, text, title}) => {
+const Paragraph = ({text, className, title}) => {
   return (
-    <p className={`font-normal text-base ${className}`} title={title}>{text}</p>
+    <p className={`font-normal text-base text-gray1 ${className}`} title={title}>{text}</p>
   )
 }
 
-export default Peragraph
+export default Paragraph
