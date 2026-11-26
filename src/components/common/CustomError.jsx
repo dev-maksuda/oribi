@@ -1,32 +1,33 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import Container from './Container'
+import Peragraph from '../ui/Paragraph'
+import Input from '../ui/Input'
 import PrimaryButton from '../ui/PrimaryButton'
-import { useNavigate } from "react-router";
-import Paragraph from '../ui/Paragraph';
 
-const CastomError = () => {
+const CustomError = () => {
+  let navigate = useNavigate();
 
-    let navigate = useNavigate();
-    const handleRedirect = () =>{
-        navigate("/")
-    }
-    return (
+  const handleRedirect = () => {
+    navigate("/")
+  }
 
-        <div className=''>
-            <Container>
-                <div className="min-h-[20vh] flex items-center"></div>
-                <div className="max-w-[652px]">
-                    <span className='text-black1 text-[200px] font-bold'>404</span>
-                    <Peragraph text="The page you were looking for couldn't be found. The page could be removed or you misspelled the word while searching for it. Maybe try a search?"/>
-                    <div className="border border-gray2 p-5 mt-12.5">
-                        <Input type='text' placeholder='Search Here' className="outline-0 w-[88%]" />
-                    </div>
-                    <PrimaryButton text={"back to home"} onClick={handleRedirect} className='mt-18' />
-                </div>
-            </Container>
-
+  return (
+    <div className=''>
+      <Container>
+        <div className='min-h-[80vh] flex items-center'>
+          <div className='max-w-[652px]'>
+            <span className='text-black1 text-[200px] font-bold'>404</span>
+            <Peragraph text="The page you were looking for couldn't be found. The page could be removed or you misspelled the word while searching for it. Maybe try a search?" />
+            <div className='border border-gray2 p-5 mt-12.5'>
+              <Input type="text" placeholder="Search Here" className="outline-0 w-[88%]" />
+            </div>
+            <PrimaryButton text={"back to home"} onClick={handleRedirect} className="mt-15" />
+          </div>
         </div>
-    )
+      </Container>
+    </div>
+  )
 }
 
-export default CastomError
+export default CustomError
