@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../common/Container'
-import Image from '../ui/Image'
+import Image from '../ui/image'
 import logo from '../../assets/image/logo.png'
 import { Link, useLocation } from 'react-router-dom'
 import { menuData } from '../../dummyData/MenuData'
