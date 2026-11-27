@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { menuData, categoryData, footerNavData } from '../../dummyData/MenuData'
 import logo from '../../assets/image/logo.png'
 import Image from '../ui/image'
+import { FaFacebookF } from "react-icons/fa";
 
 
 
@@ -52,7 +53,19 @@ const Footer = () => {
             <Image src={logo} alt='img'/>
 
           </div>
-
+          <div className='pt-16 flex justify-between item-center'>
+            <ul className='flex gap-6.5 items-center'>
+              <li>
+                <Link><FaFacebookF /></Link>
+              </li>
+              <li>
+                <Link><FaFacebookF /></Link>
+              </li>
+              <li>
+                <Link><FaFacebookF /></Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </Container>
     </footer>
