@@ -40,6 +40,11 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+          <div className='bg-red-400'>
+            <h3 className='font-bold text-black1 uppercase mb-4.25'>(052) 611-5711 company@domain.com</h3>
+            <address>575 Crescent Ave. Quakertown, PA 18951</address>
+          </div>
+
         </div>
       </Container>
     </footer>
