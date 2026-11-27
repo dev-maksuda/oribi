@@ -1,5 +1,6 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
+import { useState } from 'react'
+import { useNavigate} from "react-router-dom";
 import Container from './Container'
 import Peragraph from '../ui/Paragraph'
 import Input from '../ui/Input'
@@ -8,11 +9,15 @@ import { IoIosSearch } from "react-icons/io";
 
 
 const CustomError = () => {
+  const [searchValue, setSearchValue] = useState("")
   let navigate = useNavigate();
 
   const handleRedirect = () => {
     navigate("/")
   }
+
+  console.log(searchValue)
+
 
   return (
        <div className=' '>
