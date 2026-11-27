@@ -31,7 +31,7 @@ const CustomError = () => {
                 type="text" placeholder="Search Here" className="outline-0 w-[88%]" />
               <IoIosSearch className='absolute right-5 top-1/2 -translate-y-1/2 text-2xl' />
             </div>
-            <PrimaryButton text={"back to home"} onClick={handleRedirect} className="mt-15" />
+            <PrimaryButton text={"back to home"} onClick={handleRedirect} className="mt-15 mb-140" />
           </div>
         </div>
       </Container>
